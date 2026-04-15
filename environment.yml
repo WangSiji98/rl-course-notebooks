@@ -1,0 +1,17 @@
+name: rl-course
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy=2.2
+  - matplotlib=3.10
+  - gymnasium=1.2
+  - jupyterlab
+  - ipykernel
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu128
+      - torch==2.11.0
+      - torchvision
+      - torchaudio
